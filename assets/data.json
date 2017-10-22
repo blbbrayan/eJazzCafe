@@ -1,0 +1,68 @@
+{
+  "coffee-type": [
+    {
+      "label": "Regular",
+      "cost": 1.00
+    },
+    {
+      "label": "Decaf",
+      "cost": 0.95
+    }
+  ],
+  "cup-size": [
+    {
+      "label": "Small",
+      "cost": 0
+    },
+    {
+      "label": "Medium",
+      "cost": 0.55
+    },
+    {
+      "label": "Large",
+      "cost": 0.85
+    }
+  ],
+  "flavor": [
+    {
+      "label": "None",
+      "cost": 0
+    },
+    {
+      "label": "Mocha",
+      "cost": 0.25
+    },
+    {
+      "label": "Vanilla",
+      "cost": 0.25
+    }
+  ],
+  "sugar": [
+    {
+      "label": "None",
+      "cost": 0
+    },
+    {
+      "label": "Sugar",
+      "cost": 0
+    },
+    {
+      "label": "Splenda",
+      "cost": 0
+    }
+  ],
+  "cream": [
+    {
+      "label": "None",
+      "cost": 0
+    },
+    {
+      "label": "Milk",
+      "cost": 0
+    },
+    {
+      "label": "Half & Half",
+      "cost": 0
+    }
+  ]
+}

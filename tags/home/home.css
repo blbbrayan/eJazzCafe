@@ -1,0 +1,18 @@
+.tabs .indicator{
+    background-color: #a1887f !important;
+}
+
+.c_label{
+    line-height: 46px;
+    font-size: 17px;
+}
+
+.c-start{
+    text-align: center !important;
+    width: 70px !important;
+    height: 70px !important;
+    line-height: 70px !important;
+    font-size: 20px !important;
+    margin-bottom: -45px !important;
+    margin-left: 85% !important;
+}

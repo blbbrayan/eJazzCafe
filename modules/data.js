@@ -1,0 +1,1 @@
+var data,module;data={},goat.http.get("assets/data.json",function(t,e){return t?console.log(t):data=JSON.parse(e)}),module={getCoffeeTypes:function(){return data["coffee-type"]},getCupSizes:function(){return data["cup-size"]},getFlavors:function(){return data.flavor},getSugarTypes:function(){return data.sugar},getCreamTypes:function(){return data.cream}};

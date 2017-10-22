@@ -1,0 +1,12 @@
+body{
+    font-family: sans-serif;
+    background-color: #eae1d6;
+}
+
+a{
+    cursor: pointer;
+}
+
+small{
+    font-size: 70% !important;
+}

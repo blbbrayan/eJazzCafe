@@ -1,0 +1,10 @@
+/*Coffee Card*/
+.cc_card span{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cc_checkout{
+    line-height: 42px;
+    padding-right: 10px;
+}

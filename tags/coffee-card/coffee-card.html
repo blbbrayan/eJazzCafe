@@ -1,0 +1,21 @@
+<div class="card col l4 m6 s12 brown lighten-5 cc_card">
+    <div class="card-content">
+        <div class="row">
+            <img src="../assets/Coffee-icon.png" width="50px">
+            <span class="brown-text text-lighten-2" link="$$coffee.cupSize ? $$coffee.cupSize.label : ''"></span>
+            <span class="brown-text text-lighten-2" link="$$coffee.flavor && $$coffee.flavor !== 'None' ? $$coffee.flavor.label : ''"></span>
+            <span class="brown-text text-lighten-2" link="$$coffee.coffeeType ? $$coffee.coffeeType.label : ''"></span>
+        </div>
+        <div class="row">
+            <ul>
+                <li class="brown-text text-lighten-2 c_label" if="$$coffee.flavor && $$coffee.flavor !== 'None'" link="'Flavor Shots: ' + $$coffee.flavorAmt + 'shots of ' + $$coffee.flavor.label"></li>
+                <li class="brown-text text-lighten-2 c_label" if="$$coffee.sugarType && $$coffee.sugarType !== 'None'" link="'Sugar: ' + $$coffee.sugarAmt + ' ' + $$coffee.sugarType.label + '(s)'"></li>
+            </ul>
+        </div>
+        <div class="row" if="$$coffee.coffeeType && $$coffee.cupSize">
+            <span class="brown-text text-lighten-3 cc_checkout">Cost: </span><span class="green-text cc_checkout" link="'$'+$$coffee.getCost()"></span>
+            <a class="btn-floating waves-effect waves-light right green" ng-click="checkout()"><i class="material-icons right">shopping_cart</i></a>
+            <span class="green-text right cc_checkout">Checkout</span>
+        </div>
+    </div>
+</div>
