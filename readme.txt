@@ -2,6 +2,6 @@ To run:
 
 npm install
 
-To dev
+To dev:
 
 gulp

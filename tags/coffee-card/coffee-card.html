@@ -14,7 +14,7 @@
         </div>
         <div class="row" if="$$coffee.coffeeType && $$coffee.cupSize">
             <span class="brown-text text-lighten-3 cc_checkout">Cost: </span><span class="green-text cc_checkout" link="'$'+$$coffee.getCost()"></span>
-            <a class="btn-floating waves-effect waves-light right green" ng-click="checkout()"><i class="material-icons right">shopping_cart</i></a>
+            <a class="btn-floating waves-effect waves-light right green" click="$$checkout()"><i class="material-icons right">shopping_cart</i></a>
             <span class="green-text right cc_checkout">Checkout</span>
         </div>
     </div>
