@@ -23,14 +23,15 @@ CoffeeCard = (cupSize, coffeeType, flavor, sugarType) ->
       cost += this.sugarType.cost * this.sugarAmt
     return (Math.ceil(cost * 100) / 100)
   this.toStr = () ->
-    return _formatString("{0} {1} {2} with {3} {1} shot(s) and {4} {5}(s)", [
+    ### return _formatString("{0} {1} {2} with {3} {1} shot(s) and {4} {5}(s)", [
       this.cupSize.label,#0
       this.flavor.label,#1
       this.coffeeType.label,#2
       this.flavorAmt,#3
       this.sugarAmt,#4
       this.sugarType.label#5
-    ])
+    ]) ###
+    return (`{this.cupSize.label} {this.flavor.label} {this.coffeeType.label} with {this.flavorAmt} {this.sugarAmt} {this.sugarType.label}`);
   return this
 
 create = (cupSize, coffeeType, flavor, sugarType) ->

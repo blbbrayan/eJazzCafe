@@ -11,6 +11,6 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-coffeescript": "0.0.15",
-    "gulp-uglify": "^3.0.0",
+    "gulp-uglify": "^3.0.0"
   }
 }
