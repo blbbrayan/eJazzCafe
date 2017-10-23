@@ -31,7 +31,7 @@ CoffeeCard = (cupSize, coffeeType, flavor, sugarType) ->
       this.sugarAmt,#4
       this.sugarType.label#5
     ]) ###
-    return (`{this.cupSize.label} {this.flavor.label} {this.coffeeType.label} with {this.flavorAmt} {this.sugarAmt} {this.sugarType.label}`);
+    return (`${this.cupSize.label} ${this.flavor.label} ${this.coffeeType.label} with ${this.flavorAmt} ${this.sugarAmt} ${this.sugarType.label}`);
   return this
 
 create = (cupSize, coffeeType, flavor, sugarType) ->
