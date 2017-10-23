@@ -1,7 +1,7 @@
-<div class="col s6 m4 l3">
-    <h6 class="brown-text text-lighten-2" link="labelName"></h6>
-    <a class='dropdown-button btn brown lighten-2' data-activates='{{elementId}}' link="$$selected ? $$selected.label : 'Select ' + $$labelName"></a>
-    <ul id="{{elementId}}" class='dropdown-content'>
+<div class="col s6 m4 l3" if="$$loaded">
+    <h6 class="brown-text text-lighten-2" link="$$labelName"></h6>
+    <a class='dropdown-button btn brown lighten-2' link="$$selected ? $$selected.label : 'Select ' + $$labelName"></a>
+    <ul class='dropdown-content'>
         <li for="options:option"><a class="brown-text text-lighten-2" click="$$setSelected($:option)" link="$$option.label"></a></li>
     </ul>
 </div>

@@ -1,1 +1,1 @@
-!function(t){t.router.addRoute("/","home",["data"]),t.router.addRoute("/home","home",["data"]),t.router.addRoute("/other","other",["data"]),t.router.start()}(window.goat);
+!function(e){e.router.addRoute("/","home",["data","coffee-card"]),e.router.addRoute("/home","home",["data","coffee-card"]),e.router.addRoute("/other","other",["data","coffee-card"]),e.router.start()}(window.goat);

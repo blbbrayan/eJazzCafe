@@ -1,1 +1,36 @@
-<h1 link="$$title + ' works!'"></h1>
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <div class="card-content">
+                <div class="row">
+                    <coffee-card goat req="$$coffee"></coffee-card>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title brown-text text-lighten-3">Build Your Coffee</span>
+                <div class="row">
+                    <coffee-dropdown goat for="metadata:dropdown" req="$:dropdown"></coffee-dropdown>
+                </div>
+                <div class="row">
+                    <div class="input-field col m6 s12" if="$$coffee.flavor && $$coffee.flavor.label !== 'None'">
+                        <span class="col m4 s6 brown-text lighten-3 c_label" if="$$coffee.flavor && $$coffee.flavor !== undefined">Flavor Shots</span>
+                        <input placeholder="Flavor Shots" id="flavorAmt" type="number" class="validate col m8 s6" bind="$$coffee.flavorAmt">
+                    </div>
+                    <div class="input-field col m6 s12" if="$$coffee.sugarType && $$coffee.sugarType.label !== 'None'">
+                        <span class="col m4 s6 brown-text lighten-3 c_label" if="$$coffee.sugarType && $$coffee.sugarType !== undefined" link="$$coffee.sugarType.label + ' Count'"></span>
+                        <input placeholder="Sugar Count" id="sugarAmt" type="number" class="validate col m8 s6" bind="$$coffee.sugarAmt">
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="waves-effect waves-light btn col s12 brown white-text lighten-3"
+                       if="$$checkScroll()"
+                       click="$$scrollToTop()">Back to Top</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

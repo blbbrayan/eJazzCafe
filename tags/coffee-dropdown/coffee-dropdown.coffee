@@ -12,8 +12,30 @@ getLabels = (data) ->
 
 dropdown = $req.dropdown
 
-$env = {
-  labelName: dropdown.labelName,
-  options: dropdown.options,
-  setSelected: (option) -> $env.selected = option
-}
+if(dropdown)
+  $env = {
+    labelName: dropdown.labelName,
+    options: dropdown.options,
+    setSelected: (option) -> $env.selected = option
+  }
+else
+  $env = {
+    labelName: "",
+    options: [],
+    setSelected: (option) -> $env.selected = option
+  }
+
+$env.loaded = true
+
+console.log('dropdown', $env);
+
+init = () ->
+  a = goat.getUnder($tag, 'a')[0]
+  ul = goat.getUnder($tag, 'ul')[0]
+  guid = _guid()
+  a.dataset.activates = guid
+  ul.id = guid
+  console.log('init', $env, $req)
+  $('.dropdown-button').dropdown()
+
+#setTimeout(init, 1000)
